@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.bg-purple {
+  background-color: #8e2de2;
+  box-shadow: inset 0px 0px 5px 0px #7c27c5;
+  color: #fff;
+}
+
+.bg-pink {
+  background-color: #ff0099;
+  box-shadow: inset 0px 0px 5px 0px #b8006e;
+  color: #fff;
+}
+
+.bg-smoke {
+  background-color: #e2e2e2;
+  box-shadow: inset 0px 0px 5px 0px #c2c2c2;
+}
+
+section#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(140deg, #b24592, #f15f79);
+}
+
+.kalkulator {
+  width: 330px;
+  height: fit-content;
+  background-color: yellowgreen;
+  border-radius: 5px;
+}
+
+.screen {
+  position: relative;
+}
+
+#layar1 {
+  width: 100%;
+  min-height: 120px;
+  outline: none;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  background-color: black;
+  color: #fff;
+  padding: 0 20px;
+  letter-spacing: 0.5rem;
+  text-align: right;
+  border: none;
+  border-radius: 0%;
+  overflow-x: scroll;
+}
+
+#layar2 {
+  background-color: #000;
+  color: #f15f79;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  height: 1rem;
+}
+
+.container-tombol {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tombol {
+  display: flex;
+  width: 25%;
+  height: 70px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  /* color: grey; */
+  /* border: 1px solid #cecece; */
+  border-top: none;
+  border-left: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tombol:last-child {
+  flex-grow: 1;
+}
+
+.tombol:hover {
+  background-color: #c9d6ff;
+}
+
+.tombol.bg-pink:hover {
+  background-color: #b8006e;
+}
+
+.tombol.bg-purple:hover {
+  background-color: #7c27c5;
+}
